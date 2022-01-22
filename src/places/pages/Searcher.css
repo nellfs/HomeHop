@@ -1,0 +1,53 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 36px;
+}
+
+.containerInput {
+  background: rgb(144, 222, 253);
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  border-radius: 32px;
+  box-shadow: 1px 2px 3px rgba(88, 170, 224, 0.1);
+}
+
+.containerInput input {
+  background-color: transparent;
+  border: 0;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: bold;
+  text-shadow: 1px 2px 0px rgba(88, 170, 224, 1);
+}
+
+.containerInput input::placeholder {
+  color: rgb(87, 161, 204);
+  text-shadow: none;
+
+  font-weight: normal;
+}
+
+.buttonSearch {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -6,9 +6,8 @@ const Users = () => {
   const USERS_DUMMY = [
     {
       id: "u1",
-      name: "Regina Figo",
-      image:
-        "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/74/grinning-face_1f600.png",
+      name: "Regina Melo",
+      image: "https://kottke.org/plus/misc/images/ai-faces-01.jpg",
       places: 3,
     },
   ];

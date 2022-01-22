@@ -1,7 +1,7 @@
-import { FiSearch } from "react-icons/fi";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Users from "./user/pages/Users";
+import Searcher from "./places/pages/Searcher";
 import NewPlace from "./places/pages/NewPlace";
 
 const App = () => {
@@ -12,22 +12,15 @@ const App = () => {
           path="/"
           exact
           element={
-            <div className="container">
-              <h1 className="title">Buscar casa</h1>
-              <div className="containerInput">
-                <input type="text" placeholder="Nome de um morador"></input>
-
-                <button className="buttonSearch">
-                  <FiSearch size={25} color={"#000"} />
-                </button>
-              </div>
+            <div>
+              <Searcher />
               <Users />
             </div>
           }
         ></Route>
 
         <Route path="/places/new" exact element={<NewPlace />}></Route>
-        <Route path="*" exact element={<Navigate to="/null" />}></Route>
+        <Route path="*" exact element={<Navigate to="/" />}></Route>
       </Routes>
     </BrowserRouter>
   );
