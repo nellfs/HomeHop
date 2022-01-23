@@ -11,12 +11,11 @@
   text-decoration: none;
   padding: 1rem;
   color: white;
-  background: #187edd;
 }
 
 .user-item a:hover,
 .user-item a:active {
-  background: #ff8c57;
+  background: #ffd06b;
 }
 
 .user-item__content {
