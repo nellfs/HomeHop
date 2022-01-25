@@ -22,7 +22,10 @@ const UsersList = (props) => {
           key={user.id}
           id={user.id}
           name={user.name}
-          image={user.image}
+          image={
+            user.image ||
+            "https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          }
           placeCount={user.places}
         />
       ))}

@@ -7,7 +7,7 @@ const Users = () => {
     {
       id: "u1",
       name: "Regina Melo",
-      image: "https://kottke.org/plus/misc/images/ai-faces-01.jpg",
+      // image: "https://kottke.org/plus/misc/images/ai-faces-01.jpg",
       places: 3,
     },
   ];
