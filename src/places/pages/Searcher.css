@@ -1,22 +1,21 @@
 .container {
-  margin-top: 50px;
+  margin-top: 32vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
 }
 
 .title {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
   font-size: 36px;
 }
 
-.containerInput {
+.container-input {
   background: rgb(144, 222, 253);
   padding: 10px;
   margin: 10px 0;
@@ -25,25 +24,26 @@
   box-shadow: 1px 2px 3px rgba(88, 170, 224, 0.1);
 }
 
-.containerInput input {
+.container-input input {
+  width: 65vw;
   background-color: transparent;
   border: 0;
   font-size: 16px;
   color: white;
   outline: none;
-  margin-left: 8px;
   margin-right: 2px;
+  margin-left: 2px;
   font-weight: bold;
   text-shadow: 1px 2px 0px rgba(88, 170, 224, 1);
 }
 
-.containerInput input::placeholder {
+.container-input input::placeholder {
   color: rgb(87, 161, 204);
   text-shadow: none;
   font-weight: normal;
 }
 
-.buttonSearch {
+.button-search {
   background-color: transparent;
   border: 0;
   display: flex;

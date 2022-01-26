@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import Users from "./user/pages/Users";
 import Searcher from "./places/pages/Searcher";
 import NewPlace from "./places/pages/NewPlace";
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
@@ -17,7 +16,6 @@ const App = () => {
             element={
               <div>
                 <Searcher />
-                <Users />
               </div>
             }
           ></Route>

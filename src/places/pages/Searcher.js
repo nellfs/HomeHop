@@ -12,10 +12,10 @@ const Searcher = () => {
         <GiRabbit />
         HomeRop
       </h1>
-      <div className="containerInput">
+      <div className="container-input">
         <input type="text" placeholder="Nome de um morador..."></input>
 
-        <button className="buttonSearch">
+        <button className="button-search">
           <FiSearch size={25} color={"#fff"} />
         </button>
       </div>

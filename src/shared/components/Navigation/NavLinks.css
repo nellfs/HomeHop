@@ -9,6 +9,18 @@
   justify-content: flex-end;
 }
 
+@media (min-width: 758px) {
+  .nav-links ul {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-links a {
+    display: none;
+  }
+}
+
 .nav-links a {
   color: #292929;
   text-decoration: none;

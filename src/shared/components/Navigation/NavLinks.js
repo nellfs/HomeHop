@@ -8,14 +8,11 @@ const NavLinks = (props) => {
   return (
     <ul className="nav-links">
       <li>
-        <NavLink to="/">TODOS</NavLink>
+        <NavLink to="/">PRINCIPAL</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink to="/01/places">MEU LOCAL</NavLink>
-      </li>
-      <li>
-        <NavLink to="/places/new">NOVO LOCAL</NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink to="/auth">AUTENTICAR</NavLink>
       </li>
