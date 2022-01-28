@@ -1,10 +1,10 @@
 .container {
-  margin-top: 32vh;
+  margin-top: 16vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 6vh;
 }
 
 .title {
