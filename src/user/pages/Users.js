@@ -124,6 +124,42 @@ const Users = () => {
       responsible: "Silvia Rocha",
       image: "https://thispersondoesnotexist.com/image",
     },
+    {
+      id: "n21",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n22",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n23",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n24",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n25",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n26",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
   ];
 
   return <UsersList items={USERS_DUMMY} />;

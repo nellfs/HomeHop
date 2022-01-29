@@ -1,13 +1,12 @@
-import React, { useState } from "react";
-import ScrollMenu from "react-horizontal-scrolling-menu";
+import React, { useState, useRef } from "react";
 
 import UserItem from "./UserItem";
 import "./UsersList.css";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 
 const UserList = (props) => {
-  const [scrollX, setScrollX] = useState(0);
-
+  const [data, setData] = useState();
+  const carousel = useRef(null);
   if (props.items.length === 0) {
     return (
       <div className="center">
@@ -16,44 +15,39 @@ const UserList = (props) => {
     );
   }
 
-  const handleLeftArrow = () => {
-    let x = scrollX + Math.round(window.innerWidth / 2);
-    if (x > 0) {
-      x = 0;
-    }
-    setScrollX(x);
+  const handleLeftClick = (props) => {
+    console.log(carousel.current);
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
   };
 
-  const handleRightArrow = () => {
-    let x = scrollX - Math.round(window.innerWidth / 2);
-    let listW = props.items.length * 151.7;
-    if (window.innerWidth - listW > x) {
-      x = window.innerWidth - listW;
-    }
-    setScrollX(x);
+  const handleRightClick = (props) => {
+    console.log(carousel.current);
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
   };
 
   return (
     <>
-      <ul className="user-list" style={{ marginLeft: scrollX }}>
-        {props.items.map((user) => (
-          <UserItem
-            key={user.id}
-            id={user.id}
-            name={user.name}
-            responsible={user.responsible}
-            image={user.image}
-            className="container"
-          />
-        ))}
-      </ul>
+      <div className="user-list">
+        <ul className="user-list__carousel" ref={carousel}>
+          {props.items.map((user) => (
+            <UserItem
+              className="item"
+              key={user.id}
+              id={user.id}
+              name={user.name}
+              responsible={user.responsible}
+              image={user.image}
+            />
+          ))}
+        </ul>
+      </div>
       <div className="user-list__buttons">
-        <div className="user-list__left-button" onClick={handleLeftArrow}>
-          <AiOutlineLeft size={40}></AiOutlineLeft>
-        </div>
-        <div className="user-list__right-button" onClick={handleRightArrow}>
-          <AiOutlineRight size={40}> </AiOutlineRight>
-        </div>
+        <button onClick={handleLeftClick}>
+          <AiOutlineLeft size={32}></AiOutlineLeft>
+        </button>
+        <button onClick={handleRightClick}>
+          <AiOutlineRight size={32}></AiOutlineRight>
+        </button>
       </div>
     </>
   );

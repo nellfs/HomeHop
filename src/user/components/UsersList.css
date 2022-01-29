@@ -1,62 +1,44 @@
 .user-list {
-  list-style: none;
-  gap: 4px;
-  padding: 0;
+  padding-top: 8px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  overflow-x: auto;
-  white-space: nowrap;
-  transition: all ease 0.5s;
+  justify-content: center;
+  align-items: center;
 }
 
-.user-list::-webkit-scrollbar {
-  width: 0;
+.user-list__carousel {
+  max-width: 74vw;
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  flex-wrap: nowrap;
+}
+
+.user-list__carousel::-webkit-scrollbar {
+  background-color: transparent;
+  height: 8px;
+}
+
+.user-list__carousel::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: white;
+}
+
+.user-list__carousel::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(144, 222, 253);
 }
 
 .user-list__buttons {
-  margin-top: 40px;
-  color: white;
-  cursor: pointer;
-  cursor: pointer;
-  transition: color ease 0.2s;
+  margin-top: 32px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  gap: 3vw;
-}
-@media only screen and (hover: none) and (pointer: coarse) {
-  .user-list__buttons {
-    display: none;
-  }
-}
-.user-list__left-button,
-.user-list__right-button {
-  display: flex;
-  color: white;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background: rgb(144, 222, 253);
-  width: 38px;
-  height: 38px;
-  transition: color 0.3s;
-}
-.user-list__left-button {
-  border-top-left-radius: 18px;
-  border-bottom-left-radius: 18px;
+  gap: 32px;
 }
 
-.user-list__right-button {
-  border-top-right-radius: 18px;
-  border-bottom-right-radius: 18px;
-}
-
-.user-list__left-button:hover,
-.user-list__right-button:hover {
-  color: black;
-  background: white;
+.user-list__buttons button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
 }
