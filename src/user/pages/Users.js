@@ -46,6 +46,84 @@ const Users = () => {
       responsible: "Silvia Rocha",
       image: "https://thispersondoesnotexist.com/image",
     },
+    {
+      id: "n8",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n9",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n10",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n11",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n12",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n13",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n14",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n15",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n16",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n17",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n18",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n19",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
+    {
+      id: "n20",
+      name: "Alex Rocha",
+      responsible: "Silvia Rocha",
+      image: "https://thispersondoesnotexist.com/image",
+    },
   ];
 
   return <UsersList items={USERS_DUMMY} />;
