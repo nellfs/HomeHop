@@ -18,7 +18,7 @@ const NavLinks = (props) => {
       </li>
       <li>
         <NavLink to="/auth" className={"github-icon"}>
-          {" "}
+          {"TEST"}
           <AiFillGithub size={32} color="black" />
         </NavLink>
       </li>
