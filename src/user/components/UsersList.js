@@ -1,11 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 
 import UserItem from "./UserItem";
 import "./UsersList.css";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 
 const UserList = (props) => {
-  const [data, setData] = useState();
   const carousel = useRef(null);
   if (props.items.length === 0) {
     return (
