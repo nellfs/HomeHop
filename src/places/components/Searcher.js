@@ -10,7 +10,7 @@ const Searcher = () => {
     <div className="container">
       <h1 className="title">
         <GiRabbit />
-        HomeRop
+        HomeHop
       </h1>
       <div className="container-input">
         <input type="text" placeholder="Nome de um morador..."></input>
