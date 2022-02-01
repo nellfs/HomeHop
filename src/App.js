@@ -1,8 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import Searcher from "./places/pages/Searcher";
+import Searcher from "./places/components/Searcher";
 import NewPlace from "./places/pages/NewPlace";
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
+import UserPlaces from "./places/pages/UserPlaces";
 import Users from "./user/pages/Users";
 
 const App = () => {
@@ -23,6 +24,8 @@ const App = () => {
               </>
             }
           ></Route>
+
+          <Route path="/:userId/places" exact element={<UserPlaces />}></Route>
 
           <Route path="/places/new" exact element={<NewPlace />}></Route>
 

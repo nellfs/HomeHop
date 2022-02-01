@@ -17,7 +17,7 @@ const NavLinks = (props) => {
         <NavLink to="/auth">AUTENTICAR</NavLink>
       </li>
       <li>
-        <NavLink to="/auth" className={"github-icon"}>
+        <NavLink to="/places/new" className={"github-icon"}>
           <AiFillGithub size={32} color="black" />
         </NavLink>
       </li>
