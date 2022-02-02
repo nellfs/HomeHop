@@ -10,7 +10,7 @@ const DUMMY_PLACES = [
     description: "Casinha bonitinha",
     imageUrl:
       "https://i.pinimg.com/originals/a3/f0/82/a3f082684e2ecbe834b0d6d89525ff9c.jpg",
-    addres: "Rua 30 de fevereiro",
+    address: "Rua 30 de fevereiro",
     location: {
       lat: 40.7484405,
       lgn: -73.7484405,
@@ -24,7 +24,7 @@ const DUMMY_PLACES = [
     description: "Casinha bonitinha",
     imageUrl:
       "https://i.pinimg.com/originals/a3/f0/82/a3f082684e2ecbe834b0d6d89525ff9c.jpg",
-    addres: "Rua 30 de fevereiro",
+    address: "Rua 30 de fevereiro",
     location: {
       lat: 40.7484405,
       lgn: -73.7484405,

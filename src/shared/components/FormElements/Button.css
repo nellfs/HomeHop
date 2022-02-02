@@ -1,9 +1,9 @@
 .button {
   font: inherit;
   padding: 0.5rem 1.5rem;
-  border: 1px solid #ff0055;
-  border-radius: 4px;
-  background: #ff0055;
+  border: 1px solid #4f7eff;
+  border-radius: 20px;
+  background: #4f7eff;
   color: white;
   cursor: pointer;
   margin-right: 1rem;
@@ -17,24 +17,24 @@
 
 .button:hover,
 .button:active {
-  background: #ff4382;
-  border-color: #ff4382;
+  background: #6798f3;
+  border-color: #6798f3;
 }
 
 .button--inverse {
   background: transparent;
-  color: #ff0055;
+  color: #4f7eff;
 }
 
 .button--inverse:hover,
 .button--inverse:active {
   color: white;
-  background: #ff0055;
+  background: #4f7eff;
 }
 
 .button--danger {
-  background: #830000;
-  border-color: #830000;
+  background: #ffca57;
+  border-color: #ffca57;
 }
 
 .button--danger:hover,
