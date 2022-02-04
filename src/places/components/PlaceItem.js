@@ -12,7 +12,7 @@ const PlaceItem = (props) => {
   const closeMapHandler = () => setShowMap(false);
 
   return (
-    <React.Fragment>
+    <>
       <Modal
         show={showMap}
         onCancel={closeMapHandler}
@@ -22,7 +22,7 @@ const PlaceItem = (props) => {
         footer={<Button onClick={closeMapHandler}>FECHAR</Button>}
       >
         <div className="map-container">
-          <h2>INFO (TODO)</h2>
+          <h2>TODO</h2>
         </div>
       </Modal>
       <li className="place-item">
@@ -37,14 +37,14 @@ const PlaceItem = (props) => {
           </div>
           <div className="place-item__actions">
             <Button inverse onClick={openMapHandler}>
-              VER NO MAPA
+              FAMÍLIA
             </Button>
             <Button to={`/places/${props.id}`}>EDITAR</Button>
             <Button danger>DELETAR</Button>
           </div>
         </Card>
       </li>
-    </React.Fragment>
+    </>
   );
 };
 

@@ -3,7 +3,7 @@
 }
 
 .place-item__content {
-  padding: 0;
+  padding: 2rem;
 }
 
 .place-item__info {
@@ -11,15 +11,10 @@
   text-align: center;
 }
 
-.place-item__image {
-  width: 100%;
-  height: 20rem;
-  margin-right: 1.5rem;
-}
-
 .place-item__image img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -36,6 +31,8 @@
 }
 
 .place-item__modal-content {
+  display: flex;
+  flex-direction: center;
   padding: 0;
 }
 
@@ -49,6 +46,7 @@
 }
 
 .map-container {
+  text-align: center;
   height: 13rem;
   width: 100%;
 }
