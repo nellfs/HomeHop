@@ -10,14 +10,14 @@ const NavLinks = (props) => {
       <li>
         <NavLink to="/">PRINCIPAL</NavLink>
       </li>
-      {/* <li>
-        <NavLink to="/01/places">MEU LOCAL</NavLink>
-      </li> */}
+      <li>
+        <NavLink to="/places/new">NOVO</NavLink>
+      </li>
       <li>
         <NavLink to="/auth">AUTENTICAR</NavLink>
       </li>
       <li>
-        <NavLink to="/places/new" className={"github-icon"}>
+        <NavLink to="https://github.com/nellfs" className={"github-icon"}>
           <AiFillGithub size={32} color="black" />
         </NavLink>
       </li>
