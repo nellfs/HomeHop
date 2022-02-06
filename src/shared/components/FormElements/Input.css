@@ -20,14 +20,14 @@
   font: inherit;
   border: none;
   border-radius: 4px;
-  background: #dae9fc;
+  background: #e9edf1;
   padding: 0.15rem 0.25rem;
 }
 
 .form-control input:focus,
 .form-control textarea:focus {
   outline: none;
-  background: #dae9fc;
+  background: #e9edf1;
   border-color: #510077;
 }
 
