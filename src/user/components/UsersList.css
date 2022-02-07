@@ -8,7 +8,6 @@
 .user-list__carousel {
   max-width: 74vw;
   display: flex;
-  gap: 4px;
   list-style: none;
   overflow-x: auto;
   scroll-behavior: smooth;
