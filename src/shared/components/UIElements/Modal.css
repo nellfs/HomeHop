@@ -11,7 +11,8 @@
 
 .modal__header {
   width: 100%;
-  padding-top: 32px;
+  padding-top: 0.1px;
+  padding-bottom: 0.1px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background: #f34343;
