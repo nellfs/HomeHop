@@ -36,6 +36,7 @@ const UserList = (props) => {
               name={user.name}
               responsible={user.responsible}
               image={user.image}
+              placeCount={user.places.length}
             />
           ))}
         </ul>
