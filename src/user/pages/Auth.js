@@ -64,7 +64,7 @@ const Auth = () => {
 
     if (isLoginMode) {
       try {
-        await sendRequest(
+        const responseData = await sendRequest(
           "http://localhost:5000/api/users/login",
           "POST",
           JSON.stringify({
@@ -75,11 +75,11 @@ const Auth = () => {
             "Content-Type": "application/json",
           }
         );
-        auth.login();
+        auth.login(responseData.user.id);
       } catch (err) {}
     } else {
       try {
-        await sendRequest(
+        const responseData = await sendRequest(
           "http://localhost:5000/api/users/signup",
           "POST",
           JSON.stringify({
@@ -92,7 +92,7 @@ const Auth = () => {
           }
         );
 
-        auth.login();
+        auth.login(responseData.user.id);
       } catch (err) {}
     }
   };
@@ -102,16 +102,16 @@ const Auth = () => {
       <ErrorModal error={error} onClear={clearError} />
       <Card className="authentication">
         {isLoading && <LoadingSpinner asOverlay />}
-        <h2>Login Required</h2>
+        <h2>Faça Login</h2>
         <form onSubmit={authSubmitHandler}>
           {!isLoginMode && (
             <Input
               element="input"
               id="name"
               type="text"
-              label="Your Name"
+              label="Nome"
               validators={[VALIDATOR_REQUIRE()]}
-              errorText="Please enter a name."
+              errorText="Por favor insira um nome."
               onInput={inputHandler}
             />
           )}
@@ -121,24 +121,24 @@ const Auth = () => {
             type="email"
             label="E-Mail"
             validators={[VALIDATOR_EMAIL()]}
-            errorText="Please enter a valid email address."
+            errorText="Por favor use um e-mail válido."
             onInput={inputHandler}
           />
           <Input
             element="input"
             id="password"
             type="password"
-            label="Password"
+            label="Senha"
             validators={[VALIDATOR_MINLENGTH(4)]}
-            errorText="Please enter a valid password, at least 4 characters."
+            errorText="Insira um nome válido com no mínimo 4 letras."
             onInput={inputHandler}
           />
           <Button type="submit" disabled={!formState.isValid}>
-            {isLoginMode ? "LOGIN" : "SIGNUP"}
+            {isLoginMode ? "LOGIN" : "REGISTRAR"}
           </Button>
         </form>
         <Button inverse onClick={switchModeHandler}>
-          SWITCH TO {isLoginMode ? "SIGNUP" : "LOGIN"}
+          {isLoginMode ? "REGISTRAR" : "LOGIN"}
         </Button>
       </Card>
     </>

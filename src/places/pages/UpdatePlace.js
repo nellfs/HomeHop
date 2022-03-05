@@ -89,7 +89,7 @@ const UpdatePlace = () => {
     return (
       <div className="center">
         <Card>
-          <h2>Could not find place!</h2>
+          <h2>Local não encontrado!</h2>
         </Card>
       </div>
     );
@@ -98,7 +98,7 @@ const UpdatePlace = () => {
   if (isLoading) {
     return (
       <div className="center">
-        <h2>Loading...</h2>
+        <h2>Carregando...</h2>
       </div>
     );
   }
@@ -109,9 +109,9 @@ const UpdatePlace = () => {
         id="title"
         element="input"
         type="text"
-        label="Title"
+        label="Título"
         validators={[VALIDATOR_REQUIRE()]}
-        errorText="Please enter a valid title."
+        errorText="Título inválido."
         onInput={inputHandler}
         initialValue={formState.inputs.title.value}
         initialValid={formState.inputs.title.isValid}
@@ -119,15 +119,15 @@ const UpdatePlace = () => {
       <Input
         id="description"
         element="textarea"
-        label="Description"
+        label="Descrição"
         validators={[VALIDATOR_MINLENGTH(1)]}
-        errorText="Please enter a valid description"
+        errorText="Descrição inválida."
         onInput={inputHandler}
         initialValue={formState.inputs.description.value}
         initialValid={formState.inputs.description.isValid}
       />
       <Button type="submit" disabled={!formState.isValid}>
-        UPDATE PLACE
+        ATUALIZAR LOCAL
       </Button>
     </form>
   );

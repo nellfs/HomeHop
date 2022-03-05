@@ -35,7 +35,7 @@ const MainNavigation = (props) => {
           <GiHamburgerMenu size={32} color="black" />
         </button>
         <h1 className="main-navigation__title">
-          <Link to="/">TODO</Link>
+          <Link to="/">HomeHop</Link>
         </h1>
         <nav className="main-navigation__header-nav">
           <NavLinks />

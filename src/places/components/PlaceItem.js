@@ -50,10 +50,10 @@ const PlaceItem = (props) => {
         footer={
           <>
             <Button inverse onClick={cancelDeleteHandler}>
-              CANCEL
+              CANCELAR
             </Button>
             <Button danger onClick={confirmDeleteHandler}>
-              DELETE
+              DELETAR
             </Button>
           </>
         }
